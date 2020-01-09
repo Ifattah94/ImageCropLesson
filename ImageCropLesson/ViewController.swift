@@ -10,11 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //MARK: IB Outlets
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var cropButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    //MARK: IB Actions
+    
+    
+    @IBAction func cropButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    
 
 }
 
