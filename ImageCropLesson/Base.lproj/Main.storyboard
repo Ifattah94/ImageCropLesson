@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-Wd-EiF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlaceholder copy" translatesAutoresizingMaskIntoConstraints="NO" id="XD9-Wd-EiF">
                                 <rect key="frame" x="16" y="76" width="382" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="68S-l1-cKr"/>
@@ -66,4 +66,7 @@
             <point key="canvasLocation" x="-7.2463768115942031" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imagePlaceholder copy" width="150" height="113.5"/>
+    </resources>
 </document>
