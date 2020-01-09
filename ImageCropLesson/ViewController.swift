@@ -68,5 +68,18 @@ extension ViewController {
             addPathToShapeLayer()
         }
     }
+    
+     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            let touchPoint = touch.location(in: imageView)
+            path.addLine(to: touchPoint)
+            addPathToShapeLayer()
+            path.close()
+        }
+    }
+    
+    
+    
+    
 }
 
