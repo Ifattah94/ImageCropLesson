@@ -21,7 +21,7 @@
                                     <constraint firstAttribute="height" constant="240" id="68S-l1-cKr"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mak-qL-tgK">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mak-qL-tgK">
                                 <rect key="frame" x="144.5" y="348" width="125" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Tla-zZ-nLd"/>

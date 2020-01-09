@@ -34,11 +34,17 @@ class ViewController: UIViewController {
         imageView.layer.mask = shapeLayer
         shapeLayer.fillColor = UIColor.black.cgColor
         imageView.renderImageToLayer()
+        cropButton.toggle()
         imageView.turnOffInteraction()
     }
     
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        cropButton.isEnabled = false 
+        shapeLayer.removeFromSuperlayer()
+        path = UIBezierPath()
+        shapeLayer = CAShapeLayer()
+        imageView.turnOnInteraction()
         
     }
     
@@ -60,26 +66,32 @@ class ViewController: UIViewController {
 extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let touchPoint = touch.location(in: self.imageView)
-            path.move(to: touchPoint)
+            if touch.view == imageView {
+                let touchPoint = touch.location(in: self.imageView)
+                path.move(to: touchPoint)
+            }
         }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
+            if touch.view == imageView {
             let touchPoint = touch.location(in: imageView)
             path.addLine(to: touchPoint)
             addPathToShapeLayer()
+            }
         }
     }
     
-     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let touchPoint = touch.location(in: imageView)
-            path.addLine(to: touchPoint)
-            
-            path.close()
-            addPathToShapeLayer()
+            if touch.view == imageView {
+                let touchPoint = touch.location(in: imageView)
+                path.addLine(to: touchPoint)
+                path.close()
+                addPathToShapeLayer()
+                cropButton.isEnabled = true 
+            }
         }
     }
     

@@ -14,6 +14,7 @@
 		8107F0E123C4E0A300BBF87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8107F0E023C4E0A300BBF87D /* Assets.xcassets */; };
 		8107F0E423C4E0A300BBF87D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8107F0E223C4E0A300BBF87D /* LaunchScreen.storyboard */; };
 		818B0C4D23C7844C00EC6D3A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818B0C4C23C7844C00EC6D3A /* UIImageView+Extension.swift */; };
+		818B0C4F23C7886700EC6D3A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818B0C4E23C7886700EC6D3A /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8107F0E323C4E0A300BBF87D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8107F0E523C4E0A300BBF87D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		818B0C4C23C7844C00EC6D3A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		818B0C4E23C7886700EC6D3A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				8107F0E223C4E0A300BBF87D /* LaunchScreen.storyboard */,
 				8107F0E523C4E0A300BBF87D /* Info.plist */,
 				818B0C4C23C7844C00EC6D3A /* UIImageView+Extension.swift */,
+				818B0C4E23C7886700EC6D3A /* UIButton+Extension.swift */,
 			);
 			path = ImageCropLesson;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				8107F0DC23C4E0A100BBF87D /* ViewController.swift in Sources */,
 				8107F0D823C4E0A100BBF87D /* AppDelegate.swift in Sources */,
 				818B0C4D23C7844C00EC6D3A /* UIImageView+Extension.swift in Sources */,
+				818B0C4F23C7886700EC6D3A /* UIButton+Extension.swift in Sources */,
 				8107F0DA23C4E0A100BBF87D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

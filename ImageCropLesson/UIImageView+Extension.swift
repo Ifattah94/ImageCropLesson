@@ -19,7 +19,12 @@ extension UIImageView {
     }
     
     func turnOffInteraction() {
-        self.isUserInteractionEnabled = false 
+        self.isUserInteractionEnabled = false
+        self.isMultipleTouchEnabled = false 
     }
+    func turnOnInteraction() {
+        self.isUserInteractionEnabled = true
+        self.isMultipleTouchEnabled = true 
+        }
 }
 
