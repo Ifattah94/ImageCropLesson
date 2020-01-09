@@ -31,7 +31,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func cropButtonPressed(_ sender: UIButton) {
-        
+        imageView.layer.mask = shapeLayer
+        shapeLayer.fillColor = UIColor.black.cgColor
+        imageView.renderImageToLayer()
+        imageView.turnOffInteraction()
     }
     
     
@@ -44,6 +47,7 @@ class ViewController: UIViewController {
         shapeLayer.path = self.path.cgPath
         shapeLayer.strokeColor = self.strokeColor.cgColor
         shapeLayer.lineWidth = self.lineWidth
+        shapeLayer.fillColor = UIColor.clear.cgColor
         imageView.layer.addSublayer(shapeLayer)
         
     }
@@ -73,8 +77,9 @@ extension ViewController {
         if let touch = touches.first {
             let touchPoint = touch.location(in: imageView)
             path.addLine(to: touchPoint)
-            addPathToShapeLayer()
+            
             path.close()
+            addPathToShapeLayer()
         }
     }
     
